@@ -44,13 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F94B1C6223BF30F00B928AB /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		2F94B1C7223BF31700B928AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -60,13 +53,6 @@
 				F5D8F9461E787B0E0008DA78 /* AddNewTaskViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		2F94B1C8223BF31E00B928AB /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2F94B1C9223BF32300B928AB /* System */ = {
@@ -103,9 +89,7 @@
 				F56DB3EB1E74C17C005DA4EF /* Main.storyboard */,
 				F5D8F9401E787B010008DA78 /* GBC_TodoList-Bridging-Header.h */,
 				2F94B1C9223BF32300B928AB /* System */,
-				2F94B1C8223BF31E00B928AB /* Helpers */,
 				2F94B1C7223BF31700B928AB /* Controllers */,
-				2F94B1C6223BF30F00B928AB /* Models */,
 			);
 			path = GBC_TodoList;
 			sourceTree = "<group>";

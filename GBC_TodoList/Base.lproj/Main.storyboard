@@ -34,9 +34,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.54993867635642801" green="0.72082316757338449" blue="0.97752588987350464" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <segue destination="ABh-PT-cgs" kind="show" id="bvg-ZR-zWd"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -47,7 +44,7 @@
                     <navigationItem key="navigationItem" title="My Lists" id="E2c-t0-qmT">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dep-JG-rMg">
                             <connections>
-                                <action selector="addList:" destination="mS1-HI-a6r" id="b3n-2y-K0T"/>
+                                <segue destination="ABh-PT-cgs" kind="show" id="Utc-Ao-i1o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -100,7 +97,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.5490196078431373" green="0.72156862745098038" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <segue destination="qCd-2p-dm0" kind="show" id="ScT-H9-eIM"/>
+                                    <segue destination="qCd-2p-dm0" kind="show" id="1gj-1V-dKv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -114,6 +111,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="nVt-lJ-cmh">
                             <connections>
                                 <action selector="addTaskButtonPressed:" destination="ABh-PT-cgs" id="Mp1-Ss-Tb8"/>
+                                <segue destination="FxV-EQ-U36" kind="show" id="XS6-6Z-VU3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -134,7 +132,7 @@
                         <viewControllerLayoutGuide type="bottom" id="fng-A6-SRI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ho6-U6-nRI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJA-p4-ryz">
@@ -202,7 +200,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j9c-xy-wnR">
-                                <rect key="frame" x="16" y="619" width="343" height="32"/>
+                                <rect key="frame" x="16" y="555" width="343" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5X-Om-Lud">
                                         <rect key="frame" x="0.0" y="0.0" width="166.5" height="32"/>
@@ -212,7 +210,7 @@
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="addButtonPressed:" destination="FxV-EQ-U36" eventType="touchUpInside" id="azR-Ya-NP0"/>
+                                            <action selector="addButtonPressed:" destination="FxV-EQ-U36" eventType="touchUpInside" id="6Ua-bR-ooA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2F3-Uo-y63">
@@ -229,7 +227,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-fC-Caw">
-                                <rect key="frame" x="16" y="199" width="343" height="404"/>
+                                <rect key="frame" x="16" y="199" width="343" height="340"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -258,7 +256,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addButton" destination="O5X-Om-Lud" id="NBh-DW-brk"/>
                         <outlet property="cancelButton" destination="2F3-Uo-y63" id="LTp-4i-9h4"/>
                         <outlet property="dueDateField" destination="sXT-PH-ZXT" id="KR5-70-o6S"/>
                         <outlet property="taskTitle" destination="bZP-rG-X4f" id="lUi-bY-bVV"/>
@@ -273,6 +270,7 @@
         <!--Item View-->
         <scene sceneID="lfT-2X-Agk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="62L-eZ-emq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Item View" id="qCd-2p-dm0" customClass="TaskViewController" customModule="GBC_TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ljm-Z3-2u4"/>
@@ -340,7 +338,6 @@
                         <outlet property="dueDateField" destination="cL7-hZ-OV3" id="GlM-RO-WK1"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="62L-eZ-emq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2136.8000000000002" y="-76.011994002998506"/>
         </scene>
