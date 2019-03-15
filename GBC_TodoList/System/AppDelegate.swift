@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  List Tracker
-//
-//  Created by Saundra Castaneda on 2/15/17.
-//  Copyright © 2017 DePaul University. All rights reserved.
-//
 
 import UIKit
 import CoreData

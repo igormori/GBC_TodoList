@@ -1,10 +1,3 @@
-//
-//  TasksTableViewController.swift
-//  List Tracker
-//
-//  Created by David Para on 3/5/17.
-//  Copyright © 2017 DePaul University. All rights reserved.
-//
 
 import UIKit
 import MessageUI

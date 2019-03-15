@@ -1,10 +1,3 @@
-//
-//  AddNewTaskViewController.swift
-//  List Tracker
-//
-//  Created by David Para on 3/7/17.
-//  Copyright © 2017 DePaul University. All rights reserved.
-//
 
 import UIKit
 
