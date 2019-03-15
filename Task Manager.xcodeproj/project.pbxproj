@@ -16,7 +16,6 @@
 		F5D8F9481E787B0E0008DA78 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D8F9441E787B0E0008DA78 /* TasksTableViewController.swift */; };
 		F5D8F9491E787B0E0008DA78 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D8F9451E787B0E0008DA78 /* TaskViewController.swift */; };
 		F5D8F94A1E787B0E0008DA78 /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D8F9461E787B0E0008DA78 /* AddNewTaskViewController.swift */; };
-		F5D8F94C1E787D390008DA78 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5D8F94B1E787D390008DA78 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +44,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F94B1C6223BF30F00B928AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F94B1C7223BF31700B928AB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5D8F9431E787B0E0008DA78 /* ListsTableViewController.swift */,
+				F5D8F9441E787B0E0008DA78 /* TasksTableViewController.swift */,
+				F5D8F9451E787B0E0008DA78 /* TaskViewController.swift */,
+				F5D8F9461E787B0E0008DA78 /* AddNewTaskViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F94B1C8223BF31E00B928AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F94B1C9223BF32300B928AB /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F56DB3F01E74C17C005DA4EF /* LaunchScreen.storyboard */,
+				F5D8F9411E787B020008DA78 /* AppDelegate.swift */,
+				F56DB3EE1E74C17C005DA4EF /* Assets.xcassets */,
+				F5D8F94B1E787D390008DA78 /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
 		F56DB3DB1E74C17C005DA4EF = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +99,13 @@
 		F56DB3E61E74C17C005DA4EF /* Task Manager */ = {
 			isa = PBXGroup;
 			children = (
-				F56DB3F01E74C17C005DA4EF /* LaunchScreen.storyboard */,
-				F5D8F9411E787B020008DA78 /* AppDelegate.swift */,
-				F56DB3EB1E74C17C005DA4EF /* Main.storyboard */,
-				F5D8F9431E787B0E0008DA78 /* ListsTableViewController.swift */,
-				F5D8F9441E787B0E0008DA78 /* TasksTableViewController.swift */,
-				F5D8F9451E787B0E0008DA78 /* TaskViewController.swift */,
-				F5D8F9461E787B0E0008DA78 /* AddNewTaskViewController.swift */,
-				F56DB3EE1E74C17C005DA4EF /* Assets.xcassets */,
-				F5D8F94B1E787D390008DA78 /* Info.plist */,
 				F521BA761E75A509004D6B2C /* List_Tracker.xcdatamodeld */,
+				F56DB3EB1E74C17C005DA4EF /* Main.storyboard */,
 				F5D8F9401E787B010008DA78 /* Task Manager-Bridging-Header.h */,
+				2F94B1C9223BF32300B928AB /* System */,
+				2F94B1C8223BF31E00B928AB /* Helpers */,
+				2F94B1C7223BF31700B928AB /* Controllers */,
+				2F94B1C6223BF30F00B928AB /* Models */,
 			);
 			path = "Task Manager";
 			sourceTree = "<group>";
@@ -106,14 +137,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "David Para";
 				TargetAttributes = {
 					F56DB3E31E74C17C005DA4EF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ETY6J7XEJ7;
-						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0940;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -140,7 +170,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D8F94C1E787D390008DA78 /* Info.plist in Resources */,
 				F56DB3F21E74C17C005DA4EF /* LaunchScreen.storyboard in Resources */,
 				F56DB3EF1E74C17C005DA4EF /* Assets.xcassets in Resources */,
 				F56DB3ED1E74C17C005DA4EF /* Main.storyboard in Resources */,
@@ -194,15 +223,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -243,15 +280,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -281,14 +326,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ETY6J7XEJ7;
-				INFOPLIST_FILE = "Task Manager/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Task Manager/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dpara.Task-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Task Manager/Task Manager-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -297,13 +345,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ETY6J7XEJ7;
-				INFOPLIST_FILE = "Task Manager/Info.plist";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Task Manager/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dpara.Task-Manager";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Task Manager/Task Manager-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
