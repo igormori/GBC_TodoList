@@ -112,12 +112,12 @@ class TasksTableViewController: UITableViewController, NewTaskProtocol, ReloadTa
         var
         dateString = ""
         
-        if dueToday(task.dueDate!) {
+        if dueToday(task.dueDate! as NSDate as NSDate) {
             dateFormatter.dateStyle = .none
             dateFormatter.timeStyle = .short
             dateString = dateFormatter.string(from: task.dueDate! as Date)
             dueDate = "Was due: \(dateString)"
-        } else if pastDue(task.dueDate!) {
+        } else if pastDue(task.dueDate! as NSDate) {
             dateFormatter.dateStyle = .short
             dateFormatter.timeStyle = .none
             dateString = dateFormatter.string(from: task.dueDate! as Date)
@@ -137,7 +137,7 @@ class TasksTableViewController: UITableViewController, NewTaskProtocol, ReloadTa
         cell.textLabel?.text = task.title
         cell.detailTextLabel?.text = dueDate
         
-        if pastDue(task.dueDate!) {
+        if pastDue(task.dueDate! as NSDate) {
             cell.detailTextLabel?.textColor = UIColor.red
         } else {
             cell.detailTextLabel?.textColor = UIColor.black

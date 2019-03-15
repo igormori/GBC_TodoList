@@ -79,7 +79,7 @@ class TaskViewController: UIViewController {
         
         dueDateField.text = formattedDate.string(from: datePicker.date)
         
-        task?.dueDate = datePicker.date as NSDate
+        task?.dueDate = datePicker.date as NSDate as Date
         
         self.view.endEditing(true)
     }
