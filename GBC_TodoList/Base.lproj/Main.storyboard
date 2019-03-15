@@ -7,14 +7,13 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--List View-->
         <scene sceneID="k1q-HB-v7z">
             <objects>
-                <tableViewController storyboardIdentifier="listViewController" title="List View" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mS1-HI-a6r" customClass="ListViewController" customModule="Task_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="listViewController" title="List View" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mS1-HI-a6r" customClass="ListViewController" customModule="GBC_TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="aLc-hS-LvO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +62,7 @@
         <!--Title-->
         <scene sceneID="Si2-Bp-kap">
             <objects>
-                <tableViewController storyboardIdentifier="tasksTableViewController" id="ABh-PT-cgs" customClass="TasksTableViewController" customModule="Task_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="tasksTableViewController" id="ABh-PT-cgs" customClass="TasksTableViewController" customModule="GBC_TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Y0O-jc-4ov">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,18 +111,11 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="2fx-xU-FPj">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="nVt-lJ-cmh">
-                                <connections>
-                                    <action selector="addTaskButtonPressed:" destination="ABh-PT-cgs" id="Mp1-Ss-Tb8"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="action" id="eNl-li-PiJ">
-                                <connections>
-                                    <action selector="shareListButtonPressed:" destination="ABh-PT-cgs" id="iNl-ue-sVA"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nVt-lJ-cmh">
+                            <connections>
+                                <action selector="addTaskButtonPressed:" destination="ABh-PT-cgs" id="Mp1-Ss-Tb8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="table" destination="Y0O-jc-4ov" id="fHy-0X-9tb"/>
@@ -136,7 +128,7 @@
         <!--Add New Task View Controller-->
         <scene sceneID="hx1-di-vEp">
             <objects>
-                <viewController storyboardIdentifier="Add New Task" id="FxV-EQ-U36" customClass="AddNewTaskViewController" customModule="Task_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Add New Task" id="FxV-EQ-U36" customClass="AddNewTaskViewController" customModule="GBC_TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vso-7o-MX7"/>
                         <viewControllerLayoutGuide type="bottom" id="fng-A6-SRI"/>
@@ -281,7 +273,7 @@
         <!--Item View-->
         <scene sceneID="lfT-2X-Agk">
             <objects>
-                <viewController title="Item View" id="qCd-2p-dm0" customClass="TaskViewController" customModule="Task_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Item View" id="qCd-2p-dm0" customClass="TaskViewController" customModule="GBC_TodoList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ljm-Z3-2u4"/>
                         <viewControllerLayoutGuide type="bottom" id="bc5-KD-Dkc"/>

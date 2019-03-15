@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F521BA781E75A509004D6B2C /* List_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F521BA761E75A509004D6B2C /* List_Tracker.xcdatamodeld */; };
+		F521BA781E75A509004D6B2C /* GBC_TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F521BA761E75A509004D6B2C /* GBC_TodoList.xcdatamodeld */; };
 		F56DB3ED1E74C17C005DA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56DB3EB1E74C17C005DA4EF /* Main.storyboard */; };
 		F56DB3EF1E74C17C005DA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56DB3EE1E74C17C005DA4EF /* Assets.xcassets */; };
 		F56DB3F21E74C17C005DA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56DB3F01E74C17C005DA4EF /* LaunchScreen.storyboard */; };
@@ -19,12 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F521BA771E75A509004D6B2C /* List_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = List_Tracker.xcdatamodel; sourceTree = "<group>"; };
-		F56DB3E41E74C17C005DA4EF /* Task Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F521BA771E75A509004D6B2C /* GBC_TodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GBC_TodoList.xcdatamodel; sourceTree = "<group>"; };
+		F56DB3E41E74C17C005DA4EF /* GBC_TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBC_TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56DB3EC1E74C17C005DA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F56DB3EE1E74C17C005DA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56DB3F11E74C17C005DA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F5D8F9401E787B010008DA78 /* Task Manager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task Manager-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5D8F9401E787B010008DA78 /* GBC_TodoList-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GBC_TodoList-Bridging-Header.h"; sourceTree = "<group>"; };
 		F5D8F9411E787B020008DA78 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D8F9431E787B0E0008DA78 /* ListsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListsTableViewController.swift; sourceTree = "<group>"; };
 		F5D8F9441E787B0E0008DA78 /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		F56DB3DB1E74C17C005DA4EF = {
 			isa = PBXGroup;
 			children = (
-				F56DB3E61E74C17C005DA4EF /* Task Manager */,
+				F56DB3E61E74C17C005DA4EF /* GBC_TodoList */,
 				F56DB3E51E74C17C005DA4EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,31 +91,31 @@
 		F56DB3E51E74C17C005DA4EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F56DB3E41E74C17C005DA4EF /* Task Manager.app */,
+				F56DB3E41E74C17C005DA4EF /* GBC_TodoList.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F56DB3E61E74C17C005DA4EF /* Task Manager */ = {
+		F56DB3E61E74C17C005DA4EF /* GBC_TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				F521BA761E75A509004D6B2C /* List_Tracker.xcdatamodeld */,
+				F521BA761E75A509004D6B2C /* GBC_TodoList.xcdatamodeld */,
 				F56DB3EB1E74C17C005DA4EF /* Main.storyboard */,
-				F5D8F9401E787B010008DA78 /* Task Manager-Bridging-Header.h */,
+				F5D8F9401E787B010008DA78 /* GBC_TodoList-Bridging-Header.h */,
 				2F94B1C9223BF32300B928AB /* System */,
 				2F94B1C8223BF31E00B928AB /* Helpers */,
 				2F94B1C7223BF31700B928AB /* Controllers */,
 				2F94B1C6223BF30F00B928AB /* Models */,
 			);
-			path = "Task Manager";
+			path = GBC_TodoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F56DB3E31E74C17C005DA4EF /* Task Manager */ = {
+		F56DB3E31E74C17C005DA4EF /* GBC_TodoList */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F56DB3F61E74C17C005DA4EF /* Build configuration list for PBXNativeTarget "Task Manager" */;
+			buildConfigurationList = F56DB3F61E74C17C005DA4EF /* Build configuration list for PBXNativeTarget "GBC_TodoList" */;
 			buildPhases = (
 				F56DB3E01E74C17C005DA4EF /* Sources */,
 				F56DB3E11E74C17C005DA4EF /* Frameworks */,
@@ -125,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = "Task Manager";
-			productName = "Task Manager";
-			productReference = F56DB3E41E74C17C005DA4EF /* Task Manager.app */;
+			name = GBC_TodoList;
+			productName = GBC_TodoList;
+			productReference = F56DB3E41E74C17C005DA4EF /* GBC_TodoList.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +138,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "David Para";
+				ORGANIZATIONNAME = "Igor Mori";
 				TargetAttributes = {
 					F56DB3E31E74C17C005DA4EF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -147,7 +147,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F56DB3DF1E74C17C005DA4EF /* Build configuration list for PBXProject "Task Manager" */;
+			buildConfigurationList = F56DB3DF1E74C17C005DA4EF /* Build configuration list for PBXProject "GBC_TodoList" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -160,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F56DB3E31E74C17C005DA4EF /* Task Manager */,
+				F56DB3E31E74C17C005DA4EF /* GBC_TodoList */,
 			);
 		};
 /* End PBXProject section */
@@ -188,7 +188,7 @@
 				F5D8F9491E787B0E0008DA78 /* TaskViewController.swift in Sources */,
 				F5D8F9481E787B0E0008DA78 /* TasksTableViewController.swift in Sources */,
 				F5D8F94A1E787B0E0008DA78 /* AddNewTaskViewController.swift in Sources */,
-				F521BA781E75A509004D6B2C /* List_Tracker.xcdatamodeld in Sources */,
+				F521BA781E75A509004D6B2C /* GBC_TodoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,12 +328,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Task Manager/System/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GBC_TodoList/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dpara.Task-Manager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IgorMori.GBC_TodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Task Manager/Task Manager-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "GBC_TodoList/GBC_TodoList-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -347,12 +347,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/Task Manager/System/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/GBC_TodoList/System/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.dpara.Task-Manager";
+				PRODUCT_BUNDLE_IDENTIFIER = com.IgorMori.GBC_TodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Task Manager/Task Manager-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "GBC_TodoList/GBC_TodoList-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -361,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F56DB3DF1E74C17C005DA4EF /* Build configuration list for PBXProject "Task Manager" */ = {
+		F56DB3DF1E74C17C005DA4EF /* Build configuration list for PBXProject "GBC_TodoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56DB3F41E74C17C005DA4EF /* Debug */,
@@ -370,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F56DB3F61E74C17C005DA4EF /* Build configuration list for PBXNativeTarget "Task Manager" */ = {
+		F56DB3F61E74C17C005DA4EF /* Build configuration list for PBXNativeTarget "GBC_TodoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F56DB3F71E74C17C005DA4EF /* Debug */,
@@ -382,13 +382,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F521BA761E75A509004D6B2C /* List_Tracker.xcdatamodeld */ = {
+		F521BA761E75A509004D6B2C /* GBC_TodoList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F521BA771E75A509004D6B2C /* List_Tracker.xcdatamodel */,
+				F521BA771E75A509004D6B2C /* GBC_TodoList.xcdatamodel */,
 			);
-			currentVersion = F521BA771E75A509004D6B2C /* List_Tracker.xcdatamodel */;
-			path = List_Tracker.xcdatamodeld;
+			currentVersion = F521BA771E75A509004D6B2C /* GBC_TodoList.xcdatamodel */;
+			path = GBC_TodoList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F56DB3E31E74C17C005DA4EF"
-               BuildableName = "Task Manager.app"
-               BlueprintName = "Task Manager"
-               ReferencedContainer = "container:Task Manager.xcodeproj">
+               BuildableName = "GBC_TodoList.app"
+               BlueprintName = "GBC_TodoList"
+               ReferencedContainer = "container:GBC_TodoList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F56DB3E31E74C17C005DA4EF"
-            BuildableName = "Task Manager.app"
-            BlueprintName = "Task Manager"
-            ReferencedContainer = "container:Task Manager.xcodeproj">
+            BuildableName = "GBC_TodoList.app"
+            BlueprintName = "GBC_TodoList"
+            ReferencedContainer = "container:GBC_TodoList.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F56DB3E31E74C17C005DA4EF"
-            BuildableName = "Task Manager.app"
-            BlueprintName = "Task Manager"
-            ReferencedContainer = "container:Task Manager.xcodeproj">
+            BuildableName = "GBC_TodoList.app"
+            BlueprintName = "GBC_TodoList"
+            ReferencedContainer = "container:GBC_TodoList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F56DB3E31E74C17C005DA4EF"
-            BuildableName = "Task Manager.app"
-            BlueprintName = "Task Manager"
-            ReferencedContainer = "container:Task Manager.xcodeproj">
+            BuildableName = "GBC_TodoList.app"
+            BlueprintName = "GBC_TodoList"
+            ReferencedContainer = "container:GBC_TodoList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
