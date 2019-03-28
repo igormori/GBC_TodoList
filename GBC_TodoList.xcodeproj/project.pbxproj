@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F521BA781E75A509004D6B2C /* GBC_TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F521BA761E75A509004D6B2C /* GBC_TodoList.xcdatamodeld */; };
+		18EB84D2224D46D60050161A /* GBC_TodoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18EB84D0224D46D60050161A /* GBC_TodoList.xcdatamodeld */; };
 		F56DB3ED1E74C17C005DA4EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56DB3EB1E74C17C005DA4EF /* Main.storyboard */; };
 		F56DB3EF1E74C17C005DA4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56DB3EE1E74C17C005DA4EF /* Assets.xcassets */; };
 		F56DB3F21E74C17C005DA4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56DB3F01E74C17C005DA4EF /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F521BA771E75A509004D6B2C /* GBC_TodoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GBC_TodoList.xcdatamodel; sourceTree = "<group>"; };
+		18EB84D1224D46D60050161A /* List_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = List_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		F56DB3E41E74C17C005DA4EF /* GBC_TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBC_TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56DB3EC1E74C17C005DA4EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F56DB3EE1E74C17C005DA4EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 		F56DB3E61E74C17C005DA4EF /* GBC_TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				F521BA761E75A509004D6B2C /* GBC_TodoList.xcdatamodeld */,
+				18EB84D0224D46D60050161A /* GBC_TodoList.xcdatamodeld */,
 				F56DB3EB1E74C17C005DA4EF /* Main.storyboard */,
 				F5D8F9401E787B010008DA78 /* GBC_TodoList-Bridging-Header.h */,
 				2F94B1C9223BF32300B928AB /* System */,
@@ -183,12 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EB84D2224D46D60050161A /* GBC_TodoList.xcdatamodeld in Sources */,
 				F5D8F9471E787B0E0008DA78 /* ListsTableViewController.swift in Sources */,
 				F5D8F9421E787B020008DA78 /* AppDelegate.swift in Sources */,
 				F5D8F9491E787B0E0008DA78 /* TaskViewController.swift in Sources */,
 				F5D8F9481E787B0E0008DA78 /* TasksTableViewController.swift in Sources */,
 				F5D8F94A1E787B0E0008DA78 /* AddNewTaskViewController.swift in Sources */,
-				F521BA781E75A509004D6B2C /* GBC_TodoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,13 +382,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F521BA761E75A509004D6B2C /* GBC_TodoList.xcdatamodeld */ = {
+		18EB84D0224D46D60050161A /* GBC_TodoList.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F521BA771E75A509004D6B2C /* GBC_TodoList.xcdatamodel */,
+				18EB84D1224D46D60050161A /* List_Tracker.xcdatamodel */,
 			);
-			currentVersion = F521BA771E75A509004D6B2C /* GBC_TodoList.xcdatamodel */;
-			path = GBC_TodoList.xcdatamodeld;
+			currentVersion = 18EB84D1224D46D60050161A /* List_Tracker.xcdatamodel */;
+			name = GBC_TodoList.xcdatamodeld;
+			path = ../../../GBC_TodoList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
