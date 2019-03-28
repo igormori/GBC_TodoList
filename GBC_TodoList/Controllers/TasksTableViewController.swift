@@ -24,7 +24,6 @@ class TasksTableViewController: UITableViewController, NewTaskProtocol, ReloadTa
     }
     
     
-    // Generate the popup that asks the user for new category name
     func addTask() {
         let newTaskViewController = storyboard!.instantiateViewController(withIdentifier: "Add New Task") as! AddNewTaskViewController
         newTaskViewController.delegate = self
@@ -32,7 +31,7 @@ class TasksTableViewController: UITableViewController, NewTaskProtocol, ReloadTa
     }
     
     
-    // MESSAGING
+    // messing
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -81,13 +80,13 @@ class TasksTableViewController: UITableViewController, NewTaskProtocol, ReloadTa
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+   
         return 1
     }
 
     // TABLE VIEW
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+    
         
         if let count = category?.tasks?.count {
             return count
@@ -121,9 +120,6 @@ class TasksTableViewController: UITableViewController, NewTaskProtocol, ReloadTa
             dateString = dateFormatter.string(from: task.dueDate! as Date)
             dueDate = "Due: \(dateString)"
         }
-        
-//        dateFormatter.dateFormat = "MM/dd/YYYY"
-        
         
         
         
@@ -194,48 +190,12 @@ class TasksTableViewController: UITableViewController, NewTaskProtocol, ReloadTa
         delegate?.reloadTable()
     }
     
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // navigate to edit view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
         guard let taskViewController = segue.destination as? TaskViewController
             else { return }
         guard let indexPath = self.tableView.indexPathForSelectedRow
